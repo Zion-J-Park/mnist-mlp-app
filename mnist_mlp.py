@@ -63,7 +63,7 @@ y_test = keras.utils.to_categorical(y_test, num_classes)
 
 # load model
 print('Loading model...')
-model = keras.models.load_model('models', compile=False)
+model = keras.models.load_model('models')
 # evaluate model
 score = model.evaluate(x_test, y_test, verbose=0)
 print('Test loss:', score[0])
